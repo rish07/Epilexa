@@ -16,21 +16,23 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'EPILEXA',
           style: TextStyle(
-              color: Color(0xFF0075FF),
-              fontWeight: FontWeight.bold,
-              fontSize: 30),
+            color: Color(0xFF0075FF),
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+          ),
         ),
         centerTitle: true,
         backgroundColor: Color(0xFFEAEAEA),
         elevation: 0,
         actions: <Widget>[
           IconButton(
-              icon: Icon(
-                Epilexa.vectorprofile,
-                color: Colors.black,
-                size: 20,
-              ),
-              onPressed: () {})
+            icon: Icon(
+              Epilexa.vectorprofile,
+              color: Colors.black,
+              size: 20,
+            ),
+            onPressed: () {}
+          ),
         ],
       ),
       backgroundColor: Color(0xFFEAEAEA),
@@ -45,7 +47,10 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Text(
                     'ACTIVITY',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
                   ),
                   ReusableCard(
                     colour: Colors.white,
@@ -70,9 +75,9 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   'Heart Rate',
                                   style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18),
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
                                 ),
                               ],
                             ),
@@ -86,8 +91,8 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   '90',
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30),
                                 ),
                                 SizedBox(
                                   width: 10,
@@ -95,9 +100,9 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   'BPM',
                                   style: TextStyle(
-                                      color: Colors.grey,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 20),
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 20),
                                 ),
                               ],
                             ), //put the variable here
@@ -105,10 +110,13 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Row(
                           children: <Widget>[
-                            Text('12:09'),
+                            Text(
+                              '12:09'
+                            ),
                             IconButton(
-                                icon: Icon(Icons.navigate_next),
-                                onPressed: () {})
+                              icon: Icon(Icons.navigate_next),
+                              onPressed: () {},
+                            ),
                           ],
                         ),
                       ],
@@ -138,9 +146,9 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   'Temperature',
                                   style: TextStyle(
-                                      color: Color(0xFFFF7A00),
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18),
+                                    color: Color(0xFFFF7A00),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
                                 ),
                               ],
                             ),
@@ -154,18 +162,18 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   '22',
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30),
                                 ),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 Text(
-                                  'C°',
+                                  '°C',
                                   style: TextStyle(
-                                      color: Colors.grey,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 20),
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 20),
                                 ),
                               ],
                             ), //put the variable here
