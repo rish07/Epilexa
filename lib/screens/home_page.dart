@@ -38,151 +38,187 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(14.0),
         child: Column(
           children: <Widget>[
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Text(
-                  'ACTIVITY',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                ReusableCard(
-                  colour: Colors.white,
-                  cardChild: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.baseline,
-                            textBaseline: TextBaseline.alphabetic,
-                            children: <Widget>[
-                              Icon(
-                                Epilexa.vectorheart,
-                                color: Colors.red,
-                                size: 20,
-                              ),
-                              SizedBox(
-                                width: 18,
-                              ),
-                              Text(
-                                'Heart Rate',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.baseline,
-                            textBaseline: TextBaseline.alphabetic,
-                            children: <Widget>[
-                              Text(
-                                '90',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 30),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(
-                                'BPM',
-                                style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 20),
-                              ),
-                            ],
-                          ), //put the variable here
-                        ],
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Text('12:09'),
-                          IconButton(
-                              icon: Icon(Icons.navigate_next), onPressed: () {})
-                        ],
-                      ),
-                    ],
+            Expanded(
+              flex: 2,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Text(
+                    'ACTIVITY',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
-                  onPress: () {},
-                ),
-                ReusableCard(
-                  colour: Colors.white,
-                  cardChild: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.baseline,
-                            textBaseline: TextBaseline.alphabetic,
-                            children: <Widget>[
-                              Icon(
-                                Epilexa.vectortemp,
-                                color: Color(0xFFFF7A00),
-                                size: 20,
-                              ),
-                              SizedBox(
-                                width: 12,
-                              ),
-                              Text(
-                                'Temperature',
-                                style: TextStyle(
-                                    color: Color(0xFFFF7A00),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.baseline,
-                            textBaseline: TextBaseline.alphabetic,
-                            children: <Widget>[
-                              Text(
-                                '22',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 30),
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                'C°',
-                                style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 20),
-                              ),
-                            ],
-                          ), //put the variable here
-                        ],
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Text('12:09'),
-                          IconButton(
-                              icon: Icon(Icons.navigate_next), onPressed: () {})
-                        ],
-                      ),
-                    ],
+                  ReusableCard(
+                    colour: Colors.white,
+                    cardChild: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: <Widget>[
+                                Icon(
+                                  Epilexa.vectorheart,
+                                  color: Colors.red,
+                                  size: 20,
+                                ),
+                                SizedBox(
+                                  width: 18,
+                                ),
+                                Text(
+                                  'Heart Rate',
+                                  style: TextStyle(
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: <Widget>[
+                                Text(
+                                  '90',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  'BPM',
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 20),
+                                ),
+                              ],
+                            ), //put the variable here
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text('12:09'),
+                            IconButton(
+                                icon: Icon(Icons.navigate_next),
+                                onPressed: () {})
+                          ],
+                        ),
+                      ],
+                    ),
+                    onPress: () {},
                   ),
-                  onPress: () {},
-                ),
-              ],
+                  ReusableCard(
+                    colour: Colors.white,
+                    cardChild: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: <Widget>[
+                                Icon(
+                                  Epilexa.vectortemp,
+                                  color: Color(0xFFFF7A00),
+                                  size: 20,
+                                ),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  'Temperature',
+                                  style: TextStyle(
+                                      color: Color(0xFFFF7A00),
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: <Widget>[
+                                Text(
+                                  '22',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30),
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  'C°',
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 20),
+                                ),
+                              ],
+                            ), //put the variable here
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text('12:09'),
+                            IconButton(
+                                icon: Icon(Icons.navigate_next),
+                                onPressed: () {})
+                          ],
+                        ),
+                      ],
+                    ),
+                    onPress: () {},
+                  ),
+                ],
+              ),
             ), //activity
-            Column(), //band status
+            Expanded(
+              flex: 3,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Text(
+                    'BAND STATUS',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: <Widget>[
+                        StatusCard(title: 'LEFT HAND',),
+                        StatusCard(title: 'RIGHT HAND',),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: <Widget>[
+                        StatusCard(title: 'LEFT LEG'),
+                        StatusCard(title: 'RIGHT LEG')
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
-      ),
+      ), //band status
     );
   }
 }
+
+
