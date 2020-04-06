@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
-                    'Sign up',
+                    'Log In',
                     style: TextStyle(
                       fontSize: 25.0,
                       fontWeight: FontWeight.bold
@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: MediaQuery.of(context).size.width * 0.7,
                   child: FlatButton(
                     child: Text(
-                      'Sign up',
+                      'Log In',
                       style: TextStyle(
                         color: Colors.white
                       ),
@@ -146,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                           width: 10.0,
                         ),
                         Text(
-                          'Sign up with Google',
+                          'Sign in with Google',
                           style: TextStyle(
                             color: Color(0xFF575757)
                           ),
