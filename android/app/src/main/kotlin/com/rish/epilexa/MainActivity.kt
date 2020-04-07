@@ -1,4 +1,4 @@
-package com.rish.epilexa
+package com.alpha.epilexa
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
