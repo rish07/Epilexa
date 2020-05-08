@@ -31,7 +31,9 @@ class _HomePageState extends State<HomePage> {
               color: Colors.black,
               size: 20,
             ),
-            onPressed: () {}
+            onPressed: () {
+              Navigator.pushNamed(context, 'profile');
+            }
           ),
         ],
       ),
